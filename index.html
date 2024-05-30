@@ -5,157 +5,221 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog club</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="./index.html#">
-                <svg>
+        <div class="container">
+            <div class="header-container">
+                <div>
+                    <a href="./index.html">
+                        <svg class="header-logo svg-primary-color">
+                            <use href="./image/sprite.svg#icon-logotype"></use>
+                        </svg>
+                    </a>
+                </div>
+                <nav>
+                    <ul class="header-list">
+                        <li>
+                            <a class="link"
+                                href="https://www.figma.com/design/rTCMsYAj44dHB4dfwo7cOZ/Dog-Club?node-id=123-177&t=UMOU232VAX0oFJ1j-0"
+                                target="_blank">home figma</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#advantages-section">Less talk</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#service-section">Services category</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#slider-section">Happy customer</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#contact-section">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-use">
+                    <svg class="header-svg svg-primary-color">
+                        <use href="./image/sprite.svg#icon-teenyicons_basket-minus-outline"></use>
+                    </svg>
+                    <button class="button" type="button">Contact us</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section" id="hero-section">
+            <div class="container">
+                <div class="hero-container">
+                    <div class="hero-contant">
+                        <h1 class="hero-section__title">Taking care for your Smart Dog!</h1>
+                        <p class="hero-p">Human–canine bonding is the relationship <br> between dogs and humans</p>
+                        <button class="button" type="button">Explore More</button>
+                    </div>
+                    <img class="hero-img-dog" src="./image/dog-main-section.png" alt="image the dog">
+                </div>
+            </div>
+        </section>
+        <section class="advantages-section" id="advantages-section">
+            <div class="container">
+
+                <div class="advantages-container">
+                    <div class="advantages-img-dog">
+                        <img src="./image/dog-twoo-section.png" alt="image the dog">
+                    </div>
+                    <div class="advantages-contant">
+                        <h2 class="advantages-contant__title">Less talk <br> and more walk</h2>
+                        <p class="advantages-contant__paragraph">Sometimes our career, lifestyle, or routines can make
+                            it difficult to
+                            provide your pet with the recommended amount of exercise that they need.
+                            Which is why, it’s okay to use an extra hand in walking dogs so they are in
+                            perfect shape, mentally and physically.
+                        </p>
+                        <button class="button" type="button">Explore More</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="service-section" id="service-section">
+            <div class="container">
+                <h2 class="service-section-title">Services category</h2>
+
+                <div class="service-container">
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <article class="service-list__cart">
+                                <svg class="service-list__cart-svg">
+                                    <use href="./image/sprite.svg#icon-Grooming-service-section"></use>
+                                </svg>
+                                <h3>Grooming</h3>
+                            </article>
+                        </li>
+                        <li class="service-item">
+                            <article class="service-list__cart">
+                                <svg class="service-list__cart-svg">
+                                    <use href="./image/sprite.svg#icon-Nutrition-service-section"></use>
+                                </svg>
+                                <h3>Nutrition</h3>
+                            </article>
+                        </li>
+                        <li class="service-item">
+                            <article class="service-list__cart">
+                                <svg class="service-list__cart-svg">
+                                    <use href="./image/sprite.svg#icon-training-service-section"></use>
+                                </svg>
+                                <h3>Training</h3>
+                            </article>
+                        </li>
+                        <li class="service-item">
+                            <article class="service-list__cart">
+                                <svg class="service-list__cart-svg">
+                                    <use href="./image/sprite.svg#icon-bathing-service-section"></use>
+                                </svg>
+                                <h3>Bathing</h3>
+                            </article>
+                        </li>
+                    </ul>
+                    <button class="service-button" type="button">more services
+                        <svg class="service-button__svg">
+                            <use href="./image/sprite.svg#icon-Arrow-service-section"></use>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+        <section class="slider-section" id="slider-section">
+            <div class="container">
+                <div class="slider-section__container">
+                    <h2>Happy customer</h2>
+
+                    <div class="slider-swiper__container">
+
+                        <button class="slider-button" type="button">
+                            <svg class="slider-button-svg">
+                                <use href="./image/sprite.svg#icon-Arrow-slider"></use>
+                            </svg>
+                        </button>
+
+                        <ul class="slider-list">
+                            <li class="slider-item">
+                                <article class="slider-title">
+                                    <img src="./image/Frame 17 (1).jpg" alt="old man and he dog">
+                                </article>
+                            </li>
+                            <li class="slider-item">
+                                <article class="slider-title">
+                                    <img src="./image/Frame 18 (1).jpg" alt="wuman and she dog">
+                                </article>
+                            </li>
+                            <li class="slider-item">
+                                <article class="slider-title">
+                                    <img src="./image/Frame 19 (1).jpg" alt="woman smiling looking at her dog">
+                                </article>
+                            </li>
+                        </ul>
+
+                        <button class="slider-button" type="button">
+                            <svg class="slider-button-svg rotate">
+                                <use href="./image/sprite.svg#icon-Arrow-slider"></use>
+                            </svg>
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="contact-section" id="contact-section">
+            <div class="container">
+                <h2>Our experts will take care of your friend</h2>
+                <p>Fill out the form so we can contact you!</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <a href="./index.html">
+                <svg class="footer-logo svg-primary-color">
                     <use href="./image/sprite.svg#icon-logotype"></use>
                 </svg>
             </a>
 
             <ul>
                 <li>
-                    <a href="https://www.figma.com/design/rTCMsYAj44dHB4dfwo7cOZ/Dog-Club?node-id=123-177&t=UMOU232VAX0oFJ1j-0"
-                        target="_blank">home figma</a>
+                    <a href="#">
+                        <svg class="footer-svg svg-primary-color">
+                            <use href="./image/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Less talk</a>
-                </li>
-                <li>
-                    <a href="#">Services category</a>
-                </li>
-                <li>
-                    <a href="#">Happy customer</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                    <a href="#">
+                        <svg class="footer-svg svg-primary-color">
+                            <use href="./image/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
                 </li>
             </ul>
-        </nav>
-        <svg>
-            <use href="./image/sprite.svg#icon-teenyicons_basket-minus-outline"></use>
-        </svg>
-        <button type="button">Contact us</button>
-    </header>
-    <main>
-        <section class="main-section">
-            <h1>Taking care for your Smart Dog!</h1>
-            <p>Human–canine bonding is the relationship between dogs and humans</p>
-            <button type="button">Explore More</button>
-            <img src="./image/dog-main-section.png" alt="image the dog">
-        </section>
-        <section class="second-section">
-            <h2>Less talk and more walk</h2>
-            <img src="./image/dog-twoo-section.png" alt="image the dog">
-            <p>Sometimes our career, lifestyle, or routines can make it difficult to
-                provide your pet with the recommended amount of exercise that they need.
-                Which is why, it’s okay to use an extra hand in walking dogs so they are in
-                perfect shape, mentally and physically.
-            </p>
-            <button type="button">Explore More</button>
-        </section>
-        <section class="service-section">
-            <h2>Services category</h2>
+
             <ul>
                 <li>
-                    <article>
-                        <h3>Grooming</h3>
-                    </article>
+                    <a class="link" href="#advantages-section">Less talk</a>
                 </li>
                 <li>
-                    <article>
-                        <h3>Nutrition</h3>
-                    </article>
+                    <a class="link" href="#service-section">Services category</a>
                 </li>
                 <li>
-                    <article>
-                        <h3>Training</h3>
-                    </article>
+                    <a class="link" href="#slider-section">Happy customer</a>
                 </li>
                 <li>
-                    <article>
-                        <h3>Bathing</h3>
-                    </article>
+                    <a class="link" href="#contact-section">Contact</a>
                 </li>
             </ul>
-            <button type="button">more services</button>
-        </section>
-        <section class="slider-section">
-            <h2>Happy customer</h2>
-            <ul>
-                <li>
-                    <article>
-                        <h3>Christin & Tom</h3>
-                        <p>Love the overall workout experience!</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>Anna & Tobby</h3>
-                        <p>Amazing Products & Delivery on time.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>Sindy & Kitch</h3>
-                        <p>Great job with the trainer!</p>
-                    </article>
-                </li>
-            </ul>
-        </section>
-        <section class="contact-section">
-            <h2>Our experts will take care of your friend</h2>
-            <p>Fill out the form so we can contact you!</p>
-        </section>
-    </main>
-    <footer>
-        <a href="./index.html#">
-            <svg>
-                <use href="./image/sprite.svg#icon-logotype"></use>
-            </svg>
-        </a>
-
-        <ul>
-            <li>
-                <a href="#">
-                    <svg>
-                        <use href="./image/sprite.svg#instagram"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <svg>
-                        <use href="./image/sprite.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-
-
-
-
-        <ul>
-            <li>
-                <a href="https://www.figma.com/design/rTCMsYAj44dHB4dfwo7cOZ/Dog-Club?node-id=123-177&t=UMOU232VAX0oFJ1j-0"
-                    target="_blank">home figma</a>
-            </li>
-            <li>
-                <a href="#">Less talk</a>
-            </li>
-            <li>
-                <a href="#">Services category</a>
-            </li>
-            <li>
-                <a href="#">Happy customer</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
+        </div>
     </footer>
 </body>
 
