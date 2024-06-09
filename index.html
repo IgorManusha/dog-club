@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="body-background">
     <header>
         <div class="container">
             <div class="header-container">
@@ -41,10 +41,12 @@
                     </ul>
                 </nav>
                 <div class="header-use">
-                    <svg class="header-svg svg-primary-color">
-                        <use href="./image/sprite.svg#icon-teenyicons_basket-minus-outline"></use>
-                    </svg>
-                    <button class="button" type="button">Contact us</button>
+                    <a href="#">
+                        <svg class="header-svg svg-primary-color">
+                            <use href="./image/sprite.svg#icon-teenyicons_basket-minus-outline"></use>
+                        </svg>
+                    </a>
+                    <button class="button modal-btn-open" type="button">Contact us</button>
                 </div>
             </div>
         </div>
@@ -122,11 +124,16 @@
                             </article>
                         </li>
                     </ul>
-                    <button class="service-button" type="button">more services
+                    <!-- <button class="service-button" type="button">more services
                         <svg class="service-button__svg">
                             <use href="./image/sprite.svg#icon-Arrow-service-section"></use>
                         </svg>
-                    </button>
+                    </button> -->
+                    <a href="./index2.html" class="service-button"> more services
+                        <svg class="service-button__svg">
+                            <use href="./image/sprite.svg#icon-Arrow-service-section"></use>
+                        </svg>
+                    </a>
                 </div>
 
             </div>
@@ -144,21 +151,22 @@
                             </svg>
                         </button>
 
+
                         <ul class="slider-list">
                             <li class="slider-item">
-                                <article class="slider-title">
-                                    <img src="./image/Frame 17 (1).jpg" alt="old man and he dog">
-                                </article>
+                                <div class="slider-title">
+                                    <img src="./image/Frame17.jpg" alt="old man and he dog">
+                                </div>
                             </li>
                             <li class="slider-item">
-                                <article class="slider-title">
-                                    <img src="./image/Frame 18 (1).jpg" alt="wuman and she dog">
-                                </article>
+                                <div class="slider-title">
+                                    <img src="./image/Frame18.jpg" alt="wuman and she dog">
+                                </div>
                             </li>
                             <li class="slider-item">
-                                <article class="slider-title">
-                                    <img src="./image/Frame 19 (1).jpg" alt="woman smiling looking at her dog">
-                                </article>
+                                <div class="slider-title">
+                                    <img src="./image/Frame19.jpg" alt="woman smiling looking at her dog">
+                                </div>
                             </li>
                         </ul>
 
@@ -174,53 +182,226 @@
             </div>
         </section>
         <section class="contact-section" id="contact-section">
+            <div class="contact-first-dog">
+                <img src="./image/first-dog-contact-section.png" alt="little dog sit">
+            </div>
             <div class="container">
-                <h2>Our experts will take care of your friend</h2>
-                <p>Fill out the form so we can contact you!</p>
+                <div class="contact-container">
+                    <div class="contact-form-container">
+                        <h2 class="contact-title">Our experts will take care of your friend</h2>
+                        <p class="contact-paragraph">Fill out the form so we can contact you!</p>
+
+
+                        <form class="contact-form">
+                            <div class="contact-form__input-container">
+                                <svg class="contact-form-svg">
+                                    <use href="./image/sprite.svg#you-name"></use>
+                                </svg>
+                                <input class="contact-form-input" type="text" placeholder="user name">
+                            </div>
+
+                            <div class="contact-form__input-container">
+                                <label for="pet-name">
+                                    <svg class="contact-form-svg">
+                                        <use href="./image/sprite.svg#pet-name"></use>
+                                    </svg>
+                                </label>
+                                <input class="contact-form-input" type="text" id="pet-name" placeholder="pet name">
+                            </div>
+
+                            <div class="contact-form__input-container">
+                                <svg class="contact-form-svg">
+                                    <use href="./image/sprite.svg#phone"></use>
+                                </svg>
+                                <input class="contact-form-input" type="tel" placeholder="Your phone">
+                            </div>
+
+                            <div class="contact-form__input-container">
+                                <svg class="contact-form-svg">
+                                    <use href="./image/sprite.svg#email"></use>
+                                </svg>
+                                <input class="contact-form-input" type="email" placeholder="Your email">
+                            </div>
+
+                            <button class="button contact-button" type="submit">Contact us</button>
+                            <!-- <p class="contact-privaci-paragraph">I agree to the privacy policy</p> -->
+                            <div class="contact-checkbox">
+                                <input class="contact-checkbox-input" type="checkbox" id="checkbox">
+                                <label class="contact-checkbox-privaci" for="checkbox">I agree to the privacy
+                                    policy</label>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="contact-twoo-dog">
+                <img src="./image/twoo-dog-contact-section.png" alt="big dog sit">
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer-section">
         <div class="container">
-            <a href="./index.html">
-                <svg class="footer-logo svg-primary-color">
-                    <use href="./image/sprite.svg#icon-logotype"></use>
-                </svg>
-            </a>
 
-            <ul>
-                <li>
-                    <a href="#">
-                        <svg class="footer-svg svg-primary-color">
-                            <use href="./image/sprite.svg#instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <svg class="footer-svg svg-primary-color">
-                            <use href="./image/sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+            <div class="footer-section-container">
 
-            <ul>
-                <li>
-                    <a class="link" href="#advantages-section">Less talk</a>
-                </li>
-                <li>
-                    <a class="link" href="#service-section">Services category</a>
-                </li>
-                <li>
-                    <a class="link" href="#slider-section">Happy customer</a>
-                </li>
-                <li>
-                    <a class="link" href="#contact-section">Contact</a>
-                </li>
-            </ul>
+                <div class="footer-container">
+
+                    <div class="footer-container-logo">
+                        <a href="./index.html">
+                            <svg class="footer-logo svg-primary-color">
+                                <use href="./image/sprite.svg#icon-logotype"></use>
+                            </svg>
+                        </a>
+
+                        <ul class="footer-social">
+                            <li>
+                                <a href="#">
+                                    <svg class="footer-svg svg-primary-color">
+                                        <use href="./image/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="footer-svg svg-primary-color">
+                                        <use href="./image/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <a class="link" href="./index.html">Main page</a>
+                        </li>
+                        <li>
+                            <a class="link" href="./index.html">Services category</a>
+                        </li>
+                        <li>
+                            <a class="link" href="./index.html">Happy customer</a>
+                        </li>
+                        <li>
+                            <a class="link" href="./index.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <form class="footer-form">
+
+                        <div class="footer-form-input-container">
+                            <label for="footer-form-your-name">
+                                <svg class="footer-form-svg">
+                                    <use href="./image/sprite.svg#email"></use>
+                                </svg>
+                            </label>
+                            <input class="footer-form-input" type="email" id="footer-form-your-name"
+                                placeholder="Your email">
+                        </div>
+
+                        <div class="footer-form-input-container">
+                            <input class="footer-form-input footer-form-input__mini-padding" type="text"
+                                placeholder="Your cmc">
+                        </div>
+
+                        <button class="footer-button" type="submit">Contact use</button>
+
+                        <div class="checkbox">
+                            <input class="checkbox-input" type="checkbox" id="footer-form-checkbox">
+                            <label class="checkbox-privaci" for="footer-form-checkbox">
+                                I agree to the privacy policy
+                            </label>
+                        </div>
+
+                        <!-- <a class="footer-form-privaci">I agree to the privacy policy</a> -->
+                    </form>
+
+                </div>
+
+                <div class="footer-section-container-dog">
+                    <img src="./image/dog-footer-section.png" alt="little dog see you">
+
+                </div>
+
+            </div>
+
+
         </div>
     </footer>
+
+    <!-- BACKDROP -->
+
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <div class="modal-container">
+
+                <button class="modal-button-close modal-btn-close" type="button">
+                    <img src="./image/close-modal.svg" alt="close-modal">
+                </button>
+
+                <h2 class="modal-title">Our experts will take care of your friend</h2>
+                <p class="modal-privaci">Fill out the form so we can contact you!</p>
+
+                <form class="modal-form" name="modal-form">
+
+
+                    <div class="contact-form__input-container">
+                        <svg class="contact-form-svg">
+                            <use href="./image/sprite.svg#you-name"></use>
+                        </svg>
+                        <input class="contact-form-input" type="text" placeholder="user name">
+                    </div>
+
+                    <div class="contact-form__input-container">
+                        <label for="pet-name">
+                            <svg class="contact-form-svg">
+                                <use href="./image/sprite.svg#pet-name"></use>
+                            </svg>
+                        </label>
+                        <input class="contact-form-input" type="text" id="pet-name" placeholder="pet name">
+                    </div>
+
+                    <div class="contact-form__input-container">
+                        <svg class="contact-form-svg">
+                            <use href="./image/sprite.svg#phone"></use>
+                        </svg>
+                        <input class="contact-form-input" type="tel" placeholder="Your phone">
+                    </div>
+
+                    <div class="contact-form__input-container">
+                        <svg class="contact-form-svg">
+                            <use href="./image/sprite.svg#email"></use>
+                        </svg>
+                        <input class="contact-form-input" type="email" placeholder="Your email">
+                    </div>
+
+
+
+                    <!-- <input class="modal-input" type="text" placeholder="Your name">
+
+                    <input class="modal-input" type="text" placeholder="Pet name">
+
+                    <input class="modal-input" type="tel" placeholder="Your phone">
+
+                    <input class="modal-input" type="email" placeholder="Your email">
+
+                     -->
+                    <button class="modal-form-button" type="submit">Contact us</button>
+                    <!-- <a class="modal-form-privaci">I agree to the privacy policy</a> -->
+                    <div class="modal-form-checkbox">
+                        <input class="modal-form-checkbox-input" type="checkbox" id="checkbox">
+                        <label class="modal-form-checkbox-privaci" for="checkbox">I agree to the privacy
+                            policy</label>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
