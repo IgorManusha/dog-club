@@ -1,0 +1,28 @@
+.advantages-section {
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        justify-content: space-between;
+    }
+
+    &__img-dog {
+        margin-left: -100px;
+    }
+
+    &__contant {
+        width: 100%;
+        max-width: 640px;
+        height: 100%;
+        max-height: 393px;
+        flex-grow: 1;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__paragraph {
+        margin-bottom: 24px;
+    }
+}

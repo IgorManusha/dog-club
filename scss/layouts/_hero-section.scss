@@ -1,0 +1,44 @@
+.hero-section {
+    margin-bottom: 8px;
+    background-image: url(../image/Vector\ 1\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 217px 0px 130px 0px;
+        background-image: url(../image/hero-background-elements.png);
+        background-repeat: no-repeat;
+        background-position-x: 380px;
+        background-position-y: 150px;
+    }
+
+    &__contant {
+        width: 100%;
+        max-width: 636px;
+        height: 100%;
+        max-height: 362px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        font-family: 'Rowdies';
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 1.2;
+    }
+
+    &__paragraph {
+        margin-bottom: 24px;
+    }
+
+    &__img-dog {
+        margin-right: 60px;
+        margin-top: 30px;
+        width: 100%;
+        max-width: 450px;
+        height: 100%;
+        max-height: 460px;
+    }
+}
