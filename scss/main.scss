@@ -19,8 +19,23 @@
 /*Forms*/
 @import './components/forms';
 
+/* Modal window */
+@import './components/backdrop';
+
+/* BURGER-MENU */
+@import './components/burger-menu';
+
+/* PAGINATION */
+@import './components/pagination';
+
 /* header section */
 @import './layouts/header-section';
+
+/* sorting */
+@import './layouts/sorting-section';
+
+/* burger */
+@import './layouts/burger-section';
 
 /* hero section */
 @import './layouts/hero-section';
@@ -42,6 +57,3 @@
 
 /* Nutrition section */
 @import './layouts/nutrition-section';
-
-/* Modal window */
-@import './components/modal-window';

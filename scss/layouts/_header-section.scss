@@ -5,11 +5,28 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media screen and (max-width: $bp-mobile) {
+            padding: 16px 0px;
+        }
     }
 
     &__logo {
         width: 182px;
         height: 44px;
+
+        @media screen and (max-width: $bp-mobile) {
+            width: 92px;
+            height: 20px;
+        }
+    }
+
+    &__nav {
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: block;
+        }
     }
 
     &__list {
@@ -23,6 +40,7 @@
         gap: 8px;
     }
 
+
     &__svg {
         width: 40px;
         height: 40px;
@@ -31,7 +49,45 @@
         &:hover {
             fill: var(--secondary-color-orange);
         }
+
+        @media screen and (max-width: $bp-mobile) {
+            width: 24px;
+            height: 24px;
+        }
     }
 
+    &__button-sorting {
+        border: none;
+        background-color: transparent;
+    }
 
+    &__button {
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: block;
+        }
+    }
+
+    &__burger-button {
+        display: block;
+        width: 50px;
+        background-color: transparent;
+        fill: var(--primary-color-orange);
+        border: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: none;
+        }
+    }
+
+    &__burger-svg {
+        width: 24px;
+        height: 24px;
+
+        @media screen and (min-width: $bp-mobile) {
+            width: 40px;
+            height: 40px;
+        }
+    }
 }

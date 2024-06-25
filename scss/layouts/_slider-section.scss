@@ -2,23 +2,28 @@
     text-align: center;
     margin-bottom: 30px;
 
+    &__main-title {
+        @media screen and (max-width: $bp-tablet) {
+            font-size: 32px;
+        }
+    }
+
     &__container {
         display: flex;
         gap: 24px;
         align-items: center;
+        justify-content: center;
     }
 
-    &__list {
-        display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
+    &__swiper-container {
+        overflow: hidden;
+    }
+
+    &__swiper-list {
+        margin-bottom: 32px;
     }
 
     &__item {
-        flex-basis: calc((100% - 32px) / 3);
-    }
-
-    &__title {
         transition: transform 0.3s;
 
         &:hover {
@@ -40,6 +45,10 @@
 
         &:hover {
             background-color: var(--primary-color-orange);
+        }
+
+        @media screen and (max-width: $bp-mobile) {
+            display: none;
         }
     }
 

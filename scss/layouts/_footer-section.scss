@@ -1,8 +1,13 @@
 .footer-section {
-    height: 290px;
-    padding: 32px 100px;
-    background-image: linear-gradient(0deg, white 14%,
-            var(--secondary-color-white) 16%);
+    background-color: var(--secondary-color-white);
+    position: relative;
+
+    @media screen and (min-width: $bp-desktop) {
+        height: 290px;
+        padding: 32px 100px;
+        background-image: linear-gradient(0deg, white 14%,
+                var(--secondary-color-white) 16%);
+    }
 
     &__container {
         gap: 16px;
@@ -10,7 +15,24 @@
         display: flex;
         justify-content: space-between;
         flex-grow: 1;
+
+        @media screen and (max-width: $bp-desktop) {
+            padding: 16px;
+            justify-content: space-evenly;
+            height: auto;
+        }
+
+        @media screen and (max-width: $bp-tablet) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: $bp-mobile) {
+            padding: 16px 0px;
+        }
     }
+
 
     &__container-logo {
         gap: 24px;
@@ -27,13 +49,46 @@
         position: relative;
         top: -45px;
         right: 0;
+
+        @media screen and (max-width: $bp-desktop) {
+            display: none;
+        }
+
+        @media screen and (max-width: $bp-tablet) {
+            display: block;
+            position: absolute;
+            top: -122px;
+            right: 94px;
+        }
+    }
+
+    &__dog-size {
+        @media screen and (max-width: $bp-tablet) {
+            width: 128px;
+            height: 145px;
+        }
     }
 
     &__social {
         padding: 0px 6px;
         display: flex;
         gap: 16px;
+
+        @media screen and (max-width: $bp-tablet) {
+            order: 2;
+            justify-content: center;
+        }
     }
+
+    &__link {
+        text-align: left;
+
+        @media screen and (max-width: $bp-tablet) {
+            order: 1;
+            text-align: center;
+        }
+    }
+
 
     &__svg {
         width: 40px;

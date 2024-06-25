@@ -19,7 +19,7 @@
                         </svg>
                     </a>
                 </div>
-                <nav>
+                <nav class="header-section__nav">
                     <ul class="header-section__list">
                         <li>
                             <a class="link"
@@ -41,10 +41,141 @@
                     </ul>
                 </nav>
                 <div class="header-section__use">
-                    <svg class="header-section__svg svg-primary-color">
-                        <use href="./image/sprite.svg#icon-teenyicons_basket-minus-outline"></use>
-                    </svg>
-                    <button class="button modal-btn-open" type="button" href="./index.html">Contact us</button>
+
+                    <button class="header-section__button-sorting sorting-btn-open" type="button">
+                        <svg class="header-section__svg svg-primary-color">
+                            <use href="./image/sprite.svg#icon-teenyicons_basket-minus-outline"></use>
+                        </svg>
+                    </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sorting-section sorting-section__hidden">
+                        <div class="container">
+
+                            <button class="sorting-section__button-close sorting-btn-close" type="button">
+                                <img src="./image/krest.svg" alt="close-modal">
+                            </button>
+
+                            <div class="sorting-section__window">
+                                <h1 class="">Sorting</h1>
+
+                                <ul class="sorting-section__list">
+                                    <li class="sorting-section__item">
+                                        <a class="sorting-section__item-link" href="#">Popularity</a>
+                                    </li>
+                                    <li class="sorting-section__item">
+                                        <a class="sorting-section__item-link" href="#">Cheaper first</a>
+                                    </li>
+                                    <li class="sorting-section__item">
+                                        <a class="sorting-section__item-link" href="#">More expensive first</a>
+                                    </li>
+                                    <li class="sorting-section__item">
+                                        <a class="sorting-section__item-link" href="#">By name</a>
+                                    </li>
+                                    <li class="sorting-section__item">
+                                        <a class="sorting-section__item-link" href="#">New ones first</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <button class="button header-section__button modal-btn-open" type="button"
+                        href="./index.html">Contact us</button>
+
+                    <button class="header-section__burger-button  burger-btn-open" type="button">
+                        <svg class="header-section__burger-svg">
+                            <use href="./image/sprite.svg#burger-menu"></use>
+                        </svg>
+                    </button>
+
+                    <div class="burger-menu burger-hidden">
+                        <div class="container">
+
+                            <div class="burger-section">
+                                <button class="burger-section__button-close burger-btn-close" type="button">
+                                    <img src="./image/close-modal.svg" alt="close-modal">
+                                </button>
+
+
+                                <div>
+                                    <a href="./index.html">
+                                        <svg class="header-section__logo svg-primary-color">
+                                            <use href="./image/sprite.svg#icon-logotype"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <nav class="">
+                                    <ul class="">
+                                        <li>
+                                            <a class="link"
+                                                href="https://www.figma.com/design/rTCMsYAj44dHB4dfwo7cOZ/Dog-Club?node-id=123-177&t=UMOU232VAX0oFJ1j-0"
+                                                target="_blank">home figma</a>
+                                        </li>
+                                        <li>
+                                            <a class="link" href="#advantages-section">Less talk</a>
+                                        </li>
+                                        <li>
+                                            <a class="link" href="#service-section">Services category</a>
+                                        </li>
+                                        <li>
+                                            <a class="link" href="#slider-section">Happy customer</a>
+                                        </li>
+                                        <li>
+                                            <a class="link" href="#contact-section">Contact</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                                <ul class="burger-section__social">
+                                    <li>
+                                        <a href="#">
+                                            <svg class="footer-section__svg svg-primary-color">
+                                                <use href="./image/sprite.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg class="footer-section__svg svg-primary-color">
+                                                <use href="./image/sprite.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
 
                 </div>
             </div>
@@ -54,18 +185,26 @@
 
         <section class="nutrition-section">
             <div class="container">
-                <div class="nutrition-container">
+                <div class="nutrition-section__container">
 
-                    <h2 class="nutrition-logotipe">Nutrition</h2>
+                    <h2 class="nutrition-section__logotipe">Nutrition</h2>
 
+                    <div class="nutrition-section__arrow-container">
+                        <svg class="nutrition-section__arrow">
+                            <use href="./image/sprite.svg#arrow-nutrition"></use>
+                        </svg>
 
-                    <ul class="nutrition-main">
-                        <li class="nutrition-item-first">Sorting:</li>
-                        <li class="nutrition-item">Popularity</li>
-                        <li class="nutrition-item">Cheaper first</li>
-                        <li class="nutrition-item">More expensive first</li>
-                        <li class="nutrition-item">By name</li>
-                        <li class="nutrition-item">New ones first</li>
+                        <p class="nutrition-section__paragraph">Popularity</p>
+
+                    </div>
+
+                    <ul class="nutrition-section__main">
+                        <li class="nutrition-section__item-first">Sorting:</li>
+                        <li class="nutrition-section__item">Popularity</li>
+                        <li class="nutrition-section__item">Cheaper first</li>
+                        <li class="nutrition-section__item">More expensive first</li>
+                        <li class="nutrition-section__item">By name</li>
+                        <li class="nutrition-section__item">New ones first</li>
                     </ul>
 
                 </div>
@@ -75,24 +214,25 @@
         <section class="nutrition-card">
             <div class="container">
                 <div class="nutrition-card-container">
-                    <ul class="nutrition-card-list">
+                    <ul class="nutrition-section__card-list">
 
-                        <li class="nutrition-card-item">
+                        <li class="nutrition-section__card-item">
 
-                            <div class="nutrition-card-img">
-                                <img src="./image/image 6.jpg" alt="dog">
+                            <div class="nutrition-section__card-img">
+                                <img class="nutrition-section__image-size" src="./image/image 7.png" alt="dog">
                             </div>
 
-                            <div class="nutrition-card-contant">
+                            <div class="nutrition-section__card-contant">
 
-                                <div class="nutrition-card-contant__contant">
-                                    <p class="nutrition-card-contant-p">Vendor code: 00028</p>
+                                <div class="nutrition-section__card-contant-contant">
+                                    <p class="nutrition-section__card-contant-p">Vendor code: 00028</p>
                                     <img src="./image/Frame 14622.png" alt="stars">
                                 </div>
 
-                                <p>Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)</p>
+                                <p class="nutrition-section__paragraph">Dry food for dogs of all breeds Savory 5 kg
+                                    (rabbit and duck)</p>
 
-                                <div class="nutrition-discount">
+                                <div class="nutrition-section__discount">
                                     <p>136.00$</p>
                                     <p>320.43$</p>
                                 </div>
@@ -104,21 +244,22 @@
 
                         </li>
 
-                        <li class="nutrition-card-item">
-                            <div class="nutrition-card-img">
-                                <img src="./image/image 6.jpg" alt="dog">
+                        <li class="nutrition-section__card-item">
+                            <div class="nutrition-section__card-img">
+                                <img class="nutrition-section__image-size" src="./image/image 8.png" alt="dog">
                             </div>
 
-                            <div class="nutrition-card-contant">
+                            <div class="nutrition-section__card-contant">
 
-                                <div class="nutrition-card-contant__contant">
-                                    <p class="nutrition-card-contant-p">Vendor code: 00028</p>
+                                <div class="nutrition-section__card-contant-contant">
+                                    <p class="nutrition-section__card-contant-p">Vendor code: 00028</p>
                                     <img src="./image/Frame 14622.png" alt="stars">
                                 </div>
 
-                                <p>Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)</p>
+                                <p class="nutrition-section__paragraph">Dry food for dogs of all breeds Savory 5 kg
+                                    (rabbit and duck)</p>
 
-                                <div class="nutrition-discount">
+                                <div class="nutrition-section__discount">
                                     <p>136.00$</p>
                                     <p>320.43$</p>
                                 </div>
@@ -128,21 +269,23 @@
                             <button class="nutrition-button button" type="button">Buy</button>
 
                         </li>
-                        <li class="nutrition-card-item">
-                            <div class="nutrition-card-img">
-                                <img src="./image/image 6.jpg" alt="dog">
+
+                        <li class="nutrition-section__card-item">
+                            <div class="nutrition-section__card-img">
+                                <img class="nutrition-section__image-size" src="./image/image 6.jpg" alt="dog">
                             </div>
 
-                            <div class="nutrition-card-contant">
+                            <div class="nutrition-section__card-contant">
 
-                                <div class="nutrition-card-contant__contant">
-                                    <p class="nutrition-card-contant-p">Vendor code: 00028</p>
+                                <div class="nutrition-section__card-contant-contant">
+                                    <p class="nutrition-section__card-contant-p">Vendor code: 00028</p>
                                     <img src="./image/Frame 14622.png" alt="stars">
                                 </div>
 
-                                <p>Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)</p>
+                                <p class="nutrition-section__paragraph">Dry food for dogs of all breeds Savory 5 kg
+                                    (rabbit and duck)</p>
 
-                                <div class="nutrition-discount">
+                                <div class="nutrition-section__discount">
                                     <p>136.00$</p>
                                     <p>320.43$</p>
                                 </div>
@@ -152,46 +295,23 @@
                             <button class="nutrition-button button" type="button">Buy</button>
 
                         </li>
-                        <li class="nutrition-card-item">
-                            <div class="nutrition-card-img">
-                                <img src="./image/image 6.jpg" alt="dog">
+
+                        <li class="nutrition-section__card-item">
+                            <div class="nutrition-section__card-img">
+                                <img class="nutrition-section__image-size" src="./image/image 6.jpg" alt="dog">
                             </div>
 
-                            <div class="nutrition-card-contant">
+                            <div class="nutrition-section__card-contant">
 
-                                <div class="nutrition-card-contant__contant">
-                                    <p class="nutrition-card-contant-p">Vendor code: 00028</p>
+                                <div class="nutrition-section__card-contant-contant">
+                                    <p class="nutrition-section__card-contant-p">Vendor code: 00028</p>
                                     <img src="./image/Frame 14622.png" alt="stars">
                                 </div>
 
-                                <p>Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)</p>
+                                <p class="nutrition-section__paragraph">Dry food for dogs of all breeds Savory 5 kg
+                                    (rabbit and duck)</p>
 
-                                <div class="nutrition-discount">
-                                    <p>136.00$</p>
-                                    <p>320.43$</p>
-                                </div>
-
-                            </div>
-
-                            <button class="nutrition-button button" type="button">Buy</button>
-
-
-                        </li>
-                        <li class="nutrition-card-item">
-                            <div class="nutrition-card-img">
-                                <img src="./image/image 6.jpg" alt="dog">
-                            </div>
-
-                            <div class="nutrition-card-contant">
-
-                                <div class="nutrition-card-contant__contant">
-                                    <p class="nutrition-card-contant-p">Vendor code: 00028</p>
-                                    <img src="./image/Frame 14622.png" alt="stars">
-                                </div>
-
-                                <p>Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)</p>
-
-                                <div class="nutrition-discount">
+                                <div class="nutrition-section__discount">
                                     <p>136.00$</p>
                                     <p>320.43$</p>
                                 </div>
@@ -202,45 +322,23 @@
 
 
                         </li>
-                        <li class="nutrition-card-item">
-                            <div class="nutrition-card-img">
-                                <img src="./image/image 6.jpg" alt="dog">
+
+                        <li class="nutrition-section__card-item">
+                            <div class="nutrition-section__card-img">
+                                <img class="nutrition-section__image-size" src="./image/image 8.png" alt="dog">
                             </div>
 
-                            <div class="nutrition-card-contant">
+                            <div class="nutrition-section__card-contant">
 
-                                <div class="nutrition-card-contant__contant">
-                                    <p class="nutrition-card-contant-p">Vendor code: 00028</p>
+                                <div class="nutrition-section__card-contant-contant">
+                                    <p class="nutrition-section__card-contant-p">Vendor code: 00028</p>
                                     <img src="./image/Frame 14622.png" alt="stars">
                                 </div>
 
-                                <p>Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)</p>
+                                <p class="nutrition-section__paragraph">Dry food for dogs of all breeds Savory 5 kg
+                                    (rabbit and duck)</p>
 
-                                <div class="nutrition-discount">
-                                    <p>136.00$</p>
-                                    <p>320.43$</p>
-                                </div>
-
-                            </div>
-
-                            <button class="nutrition-button button" type="button">Buy</button>
-
-                        </li>
-                        <li class="nutrition-card-item">
-                            <div class="nutrition-card-img">
-                                <img src="./image/image 6.jpg" alt="dog">
-                            </div>
-
-                            <div class="nutrition-card-contant">
-
-                                <div class="nutrition-card-contant__contant">
-                                    <p class="nutrition-card-contant-p">Vendor code: 00028</p>
-                                    <img src="./image/Frame 14622.png" alt="stars">
-                                </div>
-
-                                <p>Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)</p>
-
-                                <div class="nutrition-discount">
+                                <div class="nutrition-section__discount">
                                     <p>136.00$</p>
                                     <p>320.43$</p>
                                 </div>
@@ -251,21 +349,75 @@
 
 
                         </li>
-                        <li class="nutrition-card-item">
-                            <div class="nutrition-card-img">
-                                <img src="./image/image 6.jpg" alt="dog">
+
+                        <li class="nutrition-section__card-item">
+                            <div class="nutrition-section__card-img">
+                                <img class="nutrition-section__image-size" src="./image/image 6.jpg" alt="dog">
                             </div>
 
-                            <div class="nutrition-card-contant">
+                            <div class="nutrition-section__card-contant">
 
-                                <div class="nutrition-card-contant__contant">
-                                    <p class="nutrition-card-contant-p">Vendor code: 00028</p>
+                                <div class="nutrition-section__card-contant-contant">
+                                    <p class="nutrition-section__card-contant-p">Vendor code: 00028</p>
                                     <img src="./image/Frame 14622.png" alt="stars">
                                 </div>
 
-                                <p>Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)</p>
+                                <p class="nutrition-section__paragraph">Dry food for dogs of all breeds Savory 5 kg
+                                    (rabbit and duck)</p>
 
-                                <div class="nutrition-discount">
+                                <div class="nutrition-section__discount">
+                                    <p>136.00$</p>
+                                    <p>320.43$</p>
+                                </div>
+
+                            </div>
+
+                            <button class="nutrition-button button" type="button">Buy</button>
+
+                        </li>
+
+                        <li class="nutrition-section__card-item">
+                            <div class="nutrition-section__card-img">
+                                <img class="nutrition-section__image-size" src="./image/image 7.png" alt="dog">
+                            </div>
+
+                            <div class="nutrition-section__card-contant">
+
+                                <div class="nutrition-section__card-contant-contant">
+                                    <p class="nutrition-section__card-contant-p">Vendor code: 00028</p>
+                                    <img src="./image/Frame 14622.png" alt="stars">
+                                </div>
+
+                                <p class="nutrition-section__paragraph">Dry food for dogs of all breeds Savory 5 kg
+                                    (rabbit and duck)</p>
+
+                                <div class="nutrition-section__discount">
+                                    <p>136.00$</p>
+                                    <p>320.43$</p>
+                                </div>
+
+                            </div>
+
+                            <button class="nutrition-button button" type="button">Buy</button>
+
+                        </li>
+
+                        <li class="nutrition-section__card-item">
+                            <div class="nutrition-section__card-img">
+                                <img class="nutrition-section__image-size" src="./image/image 6.jpg" alt="dog">
+                            </div>
+
+                            <div class="nutrition-section__card-contant">
+
+                                <div class="nutrition-section__card-contant-contant">
+                                    <p class="nutrition-section__card-contant-p">Vendor code: 00028</p>
+                                    <img src="./image/Frame 14622.png" alt="stars">
+                                </div>
+
+                                <p class="nutrition-section__paragraph">Dry food for dogs of all breeds Savory 5 kg
+                                    (rabbit and duck)</p>
+
+                                <div class="nutrition-section__discount">
                                     <p>136.00$</p>
                                     <p>320.43$</p>
                                 </div>
@@ -278,26 +430,26 @@
                     </ul>
                 </div>
 
-                <div class="nutrition-pagination">
-                    <button class="nutrition-pagination-button" type="button">
-                        <img class="nutrition-arrow nutrition-arrow-rotate" src="./image/pagination-arrow.svg"
-                            alt="arrow">
+                <div class="nutrition-section__pagination">
+                    <button class="nutrition-section__pagination-button" type="button">
+                        <img class="nutrition-section__arrow nutrition-section__arrow-rotate"
+                            src="./image/pagination-arrow.svg" alt="arrow">
                     </button>
-                    <ul class="nutrition-pagination-list">
+                    <ul class="nutrition-section__pagination-list">
 
-                        <li class="nutrition-pagination-item">1</li>
-                        <li class="nutrition-pagination-item">2</li>
-                        <li class="nutrition-pagination-item">3</li>
-                        <li class="nutrition-pagination-item">4</li>
-                        <li class="nutrition-pagination-item">5</li>
-                        <li class="nutrition-pagination-item">6</li>
-                        <li class="nutrition-pagination-item">7</li>
-                        <li class="nutrition-pagination-item">8</li>
-                        <li class="nutrition-pagination-item">...</li>
+                        <li class="nutrition-section__pagination-item">1</li>
+                        <li class="nutrition-section__pagination-item">2</li>
+                        <li class="nutrition-section__pagination-item">3</li>
+                        <li class="nutrition-section__pagination-item">4</li>
+                        <li class="nutrition-section__pagination-item">5</li>
+                        <li class="nutrition-section__pagination-item">6</li>
+                        <li class="nutrition-section__pagination-item">7</li>
+                        <li class="nutrition-section__pagination-item">8</li>
+                        <li class="nutrition-section__pagination-item">...</li>
 
                     </ul>
-                    <button class="nutrition-pagination-button" type="button">
-                        <img class="nutrition-arrow" src="./image/pagination-arrow.svg" alt="arrow">
+                    <button class="nutrition-section__pagination-button" type="button">
+                        <img class="nutrition-section__arrow" src="./image/pagination-arrow.svg" alt="arrow">
                     </button>
                 </div>
 
@@ -313,6 +465,8 @@
                 <div class="footer-section__container">
 
                     <div class="footer-section__container-logo">
+
+
                         <a href="./index2.html">
                             <svg class="footer-section__logo svg-primary-color">
                                 <use href="./image/sprite.svg#icon-logotype"></use>
@@ -335,9 +489,11 @@
                                 </a>
                             </li>
                         </ul>
+
                     </div>
 
-                    <ul>
+
+                    <ul class="footer-section__link">
                         <li>
                             <a class="link" href="./index.html">Main page</a>
                         </li>
@@ -376,13 +532,13 @@
                             <label class="checkbox-privaci" for="checkbox">I agree to the privacy policy</label>
                         </div>
 
-                        <!-- <a class="footer-form-privaci">I agree to the privacy policy</a> -->
+
                     </form>
 
                 </div>
 
                 <div class="footer-section__container-dog">
-                    <img src="./image/dog-footer-section.png" alt="little dog see you">
+                    <img class="footer-section__dog-size" src="./image/dog-footer-section.png" alt="little dog see you">
 
                 </div>
 
@@ -391,95 +547,58 @@
         </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden">
-        <div class="modal">
-            <div class="modal-container">
 
-                <button class="modal-button-close modal-btn-close" type="button">Close</button>
 
-                <h2 class="modal-title">Our experts will take care of your friend</h2>
-                <p class="modal-privaci">Fill out the form so we can contact you!</p>
-
-                <form class="modal-form" name="modal-form">
-
-                    <input class="modal-input" type="text" placeholder="Your name">
-
-                    <input class="modal-input" type="text" placeholder="Pet name">
-
-                    <input class="modal-input" type="tel" placeholder="Your phone">
-
-                    <input class="modal-input" type="email" placeholder="Your email">
-
-                    <button class="modal-form-button" type="submit">Contact us</button>
-
-                    <p class="modal-form-privaci">I agree to the privacy policy</p>
-
-                </form>
-
-            </div>
-        </div>
-    </div> -->
 
     <div class="backdrop is-hidden">
-        <div class="modal">
-            <div class="modal-container">
+        <div class="backdrop__modal">
+            <div class="backdrop__container">
 
-                <button class="modal-button-close modal-btn-close" type="button">
+                <button class="backdrop__button-close modal-btn-close" type="button">
                     <img src="./image/close-modal.svg" alt="close-modal">
                 </button>
 
-                <h2 class="modal-title">Our experts will take care of your friend</h2>
-                <p class="modal-privaci">Fill out the form so we can contact you!</p>
+                <h2 class="backdrop__title">Our experts will take care of your friend</h2>
+                <p>Fill out the form so we can contact you!</p>
 
-                <form class="modal-form" name="modal-form">
+                <form class="contact-form" name="modal-form">
 
 
-                    <div class="contact-form__input-container">
-                        <svg class="contact-form-svg">
+                    <div class="contact-form__container">
+                        <svg class="contact-form__svg">
                             <use href="./image/sprite.svg#you-name"></use>
                         </svg>
-                        <input class="contact-form-input" type="text" placeholder="user name">
+                        <input class="contact-form__input" type="text" placeholder="user name">
                     </div>
 
-                    <div class="contact-form__input-container">
+                    <div class="contact-form__container">
                         <label for="pet-name">
-                            <svg class="contact-form-svg">
+                            <svg class="contact-form__svg">
                                 <use href="./image/sprite.svg#pet-name"></use>
                             </svg>
                         </label>
-                        <input class="contact-form-input" type="text" id="pet-name" placeholder="pet name">
+                        <input class="contact-form__input" type="text" id="pet-name" placeholder="pet name">
                     </div>
 
-                    <div class="contact-form__input-container">
-                        <svg class="contact-form-svg">
+                    <div class="contact-form__container">
+                        <svg class="contact-form__svg">
                             <use href="./image/sprite.svg#phone"></use>
                         </svg>
-                        <input class="contact-form-input" type="tel" placeholder="Your phone">
+                        <input class="contact-form__input" type="tel" placeholder="Your phone">
                     </div>
 
-                    <div class="contact-form__input-container">
-                        <svg class="contact-form-svg">
+                    <div class="contact-form__container">
+                        <svg class="contact-form__svg">
                             <use href="./image/sprite.svg#email"></use>
                         </svg>
-                        <input class="contact-form-input" type="email" placeholder="Your email">
+                        <input class="contact-form__input" type="email" placeholder="Your email">
                     </div>
 
+                    <button class="backdrop__button" type="submit">Contact us</button>
 
-
-                    <!-- <input class="modal-input" type="text" placeholder="Your name">
-    
-                        <input class="modal-input" type="text" placeholder="Pet name">
-    
-                        <input class="modal-input" type="tel" placeholder="Your phone">
-    
-                        <input class="modal-input" type="email" placeholder="Your email">
-    
-                         -->
-                    <button class="modal-form-button" type="submit">Contact us</button>
-                    <!-- <a class="modal-form-privaci">I agree to the privacy policy</a> -->
-                    <div class="modal-form-checkbox">
-                        <input class="modal-form-checkbox-input" type="checkbox" id="checkbox">
-                        <label class="modal-form-checkbox-privaci" for="checkbox">I agree to the privacy
+                    <div class="backdrop__form-checkbox">
+                        <input class="backdrop__checkbox-input" type="checkbox" id="checkbox">
+                        <label class="backdrop__checkbox-privaci" for="checkbox">I agree to the privacy
                             policy</label>
                     </div>
 
@@ -489,8 +608,8 @@
             </div>
         </div>
     </div>
-
-
+    <script src="./js/sorting.js"></script>
+    <script src="./js/burger-menu.js"></script>
     <script src="./js/modal.js"></script>
 
 </body>

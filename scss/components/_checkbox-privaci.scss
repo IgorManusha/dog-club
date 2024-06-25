@@ -21,6 +21,10 @@
     height: 16px;
     border: 1px solid var(--primary-color-black);
     content: " ";
+
+    // @media screen and (max-width: $bp-mobile) {
+    //     margin: -1 44px;
+    // }
 }
 
 

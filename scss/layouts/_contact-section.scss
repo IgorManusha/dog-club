@@ -4,8 +4,16 @@
     background-image: url(../image/background-contact-section.png);
     background-position: -50px -30px;
 
+    @media screen and (max-width: $bp-tablet) {
+        margin-bottom: 160px;
+    }
+
     &__first-dog {
         padding-top: 244px;
+
+        @media screen and (max-width: $bp-desktop) {
+            display: none;
+        }
     }
 
     &__container {
@@ -18,6 +26,10 @@
 
     &__title {
         margin-bottom: 16px;
+
+        @media screen and (max-width: $bp-tablet) {
+            font-size: 32px;
+        }
     }
 
     &__paragraph {
@@ -30,6 +42,10 @@
 
     &__twoo-dog {
         padding-top: 60px;
+
+        @media screen and (max-width: $bp-desktop) {
+            display: none;
+        }
     }
 }
 

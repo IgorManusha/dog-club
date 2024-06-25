@@ -5,8 +5,8 @@
     border-radius: 8px;
     padding: 16px 32px;
     cursor: pointer;
-}
 
-.button:hover {
-    background-color: var(--secondary-color-orange);
+    &:hover {
+        background-color: var(--secondary-color-orange);
+    }
 }

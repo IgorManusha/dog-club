@@ -12,6 +12,18 @@
         background-repeat: no-repeat;
         background-position-x: 380px;
         background-position-y: 150px;
+
+        @media screen and (max-width: $bp-desktop) {
+            background-image: none;
+            justify-content: center;
+            padding: 116px 0px 130px 0px;
+        }
+
+        @media screen and (max-width: $bp-mobile) {
+            background-image: url(/image/mobile-background-elements.png);
+            background-position: center bottom;
+            padding: 36px 0px 42px 0px;
+        }
     }
 
     &__contant {
@@ -19,6 +31,16 @@
         max-width: 636px;
         height: 100%;
         max-height: 362px;
+
+
+        @media screen and (max-width: $bp-desktop) {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+        }
     }
 
     &__title {
@@ -27,10 +49,20 @@
         font-weight: 400;
         font-size: 72px;
         line-height: 1.2;
+
+        @media screen and (max-width: $bp-tablet) {
+            font-size: 32px;
+        }
     }
 
     &__paragraph {
+        width: 100%;
+        max-width: 416px;
         margin-bottom: 24px;
+
+        @media screen and (max-width: $bp-mobile) {
+            font-size: 16px;
+        }
     }
 
     &__img-dog {
@@ -40,5 +72,9 @@
         max-width: 450px;
         height: 100%;
         max-height: 460px;
+
+        @media screen and (max-width: $bp-desktop) {
+            display: none;
+        }
     }
 }

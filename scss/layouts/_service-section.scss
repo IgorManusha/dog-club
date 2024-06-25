@@ -4,17 +4,41 @@
 
     &__title {
         margin-bottom: 48px;
+
+        @media screen and (max-width: $bp-tablet) {
+            font-size: 32px;
+        }
     }
 
     &__container {
         display: flex;
         align-items: center;
         gap: 24px;
+
+        @media screen and (max-width: $bp-desktop) {
+            flex-direction: column;
+        }
     }
 
     &__list {
+        gap: 24px;
         display: flex;
-        gap: 24px
+
+        @media screen and (max-width: $bp-desktop) {
+            margin: 0 auto;
+        }
+    }
+
+    &__item {
+        @media screen and (max-width: $bp-desktop) {
+            display: none;
+        }
+    }
+
+    &__item:nth-child(2) {
+        @media screen and (max-width: $bp-desktop) {
+            display: block;
+        }
     }
 
     &__cart {
@@ -51,6 +75,10 @@
         &:hover {
             fill: var(--secondary-color-orange);
             color: var(--secondary-color-orange);
+        }
+
+        @media screen and (max-width: $bp-desktop) {
+            margin: 0 auto;
         }
     }
 

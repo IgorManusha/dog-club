@@ -1,0 +1,24 @@
+.burger-section {
+    position: relative;
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 16px;
+
+
+    &__button-close {
+        position: absolute;
+        top: 16px;
+        right: 0;
+        border: none;
+        background-color: transparent;
+        fill: var(--primary-color-orange);
+    }
+
+    &__social {
+        display: flex;
+        gap: 16px;
+    }
+}

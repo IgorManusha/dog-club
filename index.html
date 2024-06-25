@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog club</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -19,7 +20,7 @@
                         </svg>
                     </a>
                 </div>
-                <nav>
+                <nav class="header-section__nav">
                     <ul class="header-section__list">
                         <li>
                             <a class="link"
@@ -41,12 +42,130 @@
                     </ul>
                 </nav>
                 <div class="header-section__use">
-                    <a href="#">
+                    <!-- <a href="#">
                         <svg class="header-section__svg svg-primary-color">
                             <use href="./image/sprite.svg#icon-teenyicons_basket-minus-outline"></use>
                         </svg>
-                    </a>
-                    <button class="button modal-btn-open" type="button">Contact us</button>
+                    </a> -->
+                    <button class="header-section__button-sorting sorting-btn-open" type="button">
+                        <svg class="header-section__svg svg-primary-color">
+                            <use href="./image/sprite.svg#icon-teenyicons_basket-minus-outline"></use>
+                        </svg>
+                    </button>
+                    <div class="sorting-section sorting-section__hidden">
+                        <div class="container">
+
+                            <button class="sorting-section__button-close sorting-btn-close" type="button">
+                                <img src="./image/krest.svg" alt="close-modal">
+                            </button>
+
+                            <div class="sorting-section__window">
+                                <h1 class="">Sorting</h1>
+
+                                <ul class="sorting-section__list">
+                                    <li class="sorting-section__item">
+                                        <a class="sorting-section__item-link" href="#">Popularity</a>
+                                    </li>
+                                    <li class="sorting-section__item">
+                                        <a class="sorting-section__item-link" href="#">Cheaper first</a>
+                                    </li>
+                                    <li class="sorting-section__item">
+                                        <a class="sorting-section__item-link" href="#">More expensive first</a>
+                                    </li>
+                                    <li class="sorting-section__item">
+                                        <a class="sorting-section__item-link" href="#">By name</a>
+                                    </li>
+                                    <li class="sorting-section__item">
+                                        <a class="sorting-section__item-link" href="#">New ones first</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <button class="header-section__button button modal-btn-open" type="button">Contact us</button>
+
+                    <button class="header-section__burger-button  burger-btn-open" type="button">
+                        <svg class="header-section__burger-svg">
+                            <use href="./image/sprite.svg#burger-menu"></use>
+                        </svg>
+                    </button>
+
+                    <div class="burger-menu burger-hidden">
+                        <div class="container">
+
+                            <div class="burger-section">
+                                <button class="burger-section__button-close burger-btn-close" type="button">
+                                    <img src="./image/close-modal.svg" alt="close-modal">
+                                </button>
+
+
+                                <div>
+                                    <a href="./index.html">
+                                        <svg class="header-section__logo svg-primary-color">
+                                            <use href="./image/sprite.svg#icon-logotype"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <nav class="">
+                                    <ul class="">
+                                        <li>
+                                            <a class="link"
+                                                href="https://www.figma.com/design/rTCMsYAj44dHB4dfwo7cOZ/Dog-Club?node-id=123-177&t=UMOU232VAX0oFJ1j-0"
+                                                target="_blank">home figma</a>
+                                        </li>
+                                        <li>
+                                            <a class="link" href="#advantages-section">Less talk</a>
+                                        </li>
+                                        <li>
+                                            <a class="link" href="#service-section">Services category</a>
+                                        </li>
+                                        <li>
+                                            <a class="link" href="#slider-section">Happy customer</a>
+                                        </li>
+                                        <li>
+                                            <a class="link" href="#contact-section">Contact</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                                <ul class="burger-section__social">
+                                    <li>
+                                        <a href="#">
+                                            <svg class="footer-section__svg svg-primary-color">
+                                                <use href="./image/sprite.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg class="footer-section__svg svg-primary-color">
+                                                <use href="./image/sprite.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -57,7 +176,7 @@
                 <div class="hero-section__container">
                     <div class="hero-section__contant">
                         <h1 class="hero-section__title">Taking care for your Smart Dog!</h1>
-                        <p class="hero-section__paragraph">Human–canine bonding is the relationship <br> between dogs
+                        <p class="hero-section__paragraph">Human–canine bonding is the relationship between dogs
                             and humans
                         </p>
                         <button class="button" type="button">Explore More</button>
@@ -74,14 +193,24 @@
                         <img src="./image/dog-twoo-section.png" alt="image the dog">
                     </div>
                     <div class="advantages-section__contant">
-                        <h2 class="advantages-section__title">Less talk <br> and more walk</h2>
+
+                        <div class="advantages-section__container-mobile">
+                            <h2 class="advantages-section__title">Less talk <br> and more walk</h2>
+                            <img class="advantages-section__arrow-mobile" src="./image/advantages-arrow.png"
+                                alt="arrow icon">
+                        </div>
+
                         <p class="advantages-section__paragraph">Sometimes our career, lifestyle, or routines can make
                             it difficult to
                             provide your pet with the recommended amount of exercise that they need.
                             Which is why, it’s okay to use an extra hand in walking dogs so they are in
                             perfect shape, mentally and physically.
                         </p>
-                        <button class="button" type="button">Explore More</button>
+                        <div class="advantages-section__video-icon-container">
+                            <button class="button" type="button">Explore More</button>
+                            <img class="advantages-section__video-icon" src="./image/advantages-video.png"
+                                alt="video icon">
+                        </div>
                     </div>
                 </div>
 
@@ -93,7 +222,7 @@
 
                 <div class="service-section__container">
                     <ul class="service-section__list">
-                        <li>
+                        <li class="service-section__item">
                             <article class="service-section__cart">
                                 <svg class="service-section__cart-svg">
                                     <use href="./image/sprite.svg#icon-Grooming-service-section"></use>
@@ -101,7 +230,7 @@
                                 <h3>Grooming</h3>
                             </article>
                         </li>
-                        <li>
+                        <li class="service-section__item">
                             <article class="service-section__cart">
                                 <svg class="service-section__cart-svg">
                                     <use href="./image/sprite.svg#icon-Nutrition-service-section"></use>
@@ -109,7 +238,7 @@
                                 <h3>Nutrition</h3>
                             </article>
                         </li>
-                        <li>
+                        <li class="service-section__item">
                             <article class="service-section__cart">
                                 <svg class="service-section__cart-svg">
                                     <use href="./image/sprite.svg#icon-training-service-section"></use>
@@ -117,7 +246,7 @@
                                 <h3>Training</h3>
                             </article>
                         </li>
-                        <li>
+                        <li class="service-section__item">
                             <article class="service-section__cart">
                                 <svg class="service-section__cart-svg">
                                     <use href="./image/sprite.svg#icon-bathing-service-section"></use>
@@ -126,11 +255,7 @@
                             </article>
                         </li>
                     </ul>
-                    <!-- <button class="service-button" type="button">more services
-                        <svg class="service-button__svg">
-                            <use href="./image/sprite.svg#icon-Arrow-service-section"></use>
-                        </svg>
-                    </button> -->
+
                     <a href="./index2.html" class="service-section__button"> more services
                         <svg class="service-section__button-svg">
                             <use href="./image/sprite.svg#icon-Arrow-service-section"></use>
@@ -140,39 +265,60 @@
 
             </div>
         </section>
+
+
         <section class="slider-section" id="slider-section">
             <div class="container">
 
-                <h2>Happy customer</h2>
+                <h2 class="slider-section__main-title">Happy customer</h2>
 
                 <div class="slider-section__container">
 
-                    <button class="slider-section__button" type="button">
+                    <button class="slider-section__button swiper-button__prev" type="button">
                         <svg class="slider-section__button-svg">
                             <use href="./image/sprite.svg#icon-Arrow-slider"></use>
                         </svg>
                     </button>
 
+                    <div class="swiper-container slider-section__swiper-container">
+                        <ul class="swiper-wrapper slider-section__swiper-list">
+                            <li class="swiper-slide">
+                                <div class="slider-section__item">
+                                    <img src="./image/Frame17.jpg" alt="old man and he dog">
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="slider-section__item">
+                                    <img src="./image/Frame18.jpg" alt="wuman and she dog">
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="slider-section__item">
+                                    <img src="./image/Frame19.jpg" alt="woman smiling looking at her dog">
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="slider-section__item">
+                                    <img src="./image/Frame17.jpg" alt="old man and he dog">
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="slider-section__item">
+                                    <img src="./image/Frame18.jpg" alt="wuman and she dog">
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="slider-section__item">
+                                    <img src="./image/Frame19.jpg" alt="woman smiling looking at her dog">
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pagination">
+                            <span class="pagination__button"></span>
+                        </div>
+                    </div>
 
-                    <ul class="slider-section__list">
-                        <li class="slider-section__item">
-                            <div class="slider-section__title">
-                                <img src="./image/Frame17.jpg" alt="old man and he dog">
-                            </div>
-                        </li>
-                        <li class="slider-section__item">
-                            <div class="slider-section__title">
-                                <img src="./image/Frame18.jpg" alt="wuman and she dog">
-                            </div>
-                        </li>
-                        <li class="slider-section__item">
-                            <div class="slider-section__title">
-                                <img src="./image/Frame19.jpg" alt="woman smiling looking at her dog">
-                            </div>
-                        </li>
-                    </ul>
-
-                    <button class="slider-section__button" type="button">
+                    <button class="slider-section__button swiper-button__next" type="button">
                         <svg class="slider-section__button-svg slider-section__button-svg--rotate">
                             <use href="./image/sprite.svg#icon-Arrow-slider"></use>
                         </svg>
@@ -183,6 +329,8 @@
 
             </div>
         </section>
+
+
         <section class="contact-section" id="contact-section">
             <div class="contact-section__first-dog">
                 <img src="./image/first-dog-contact-section.png" alt="little dog sit">
@@ -190,9 +338,9 @@
             <div class="container">
                 <div class="contact-section__container">
                     <div>
+
                         <h2 class="contact-section__title">Our experts will take care of your friend</h2>
                         <p class="contact-section__paragraph">Fill out the form so we can contact you!</p>
-
 
                         <form class="contact-form">
                             <div class="contact-form__container">
@@ -226,14 +374,13 @@
                             </div>
 
                             <button class="button contact-form__button" type="submit">Contact us</button>
-                            <!-- <p class="contact-privaci-paragraph">I agree to the privacy policy</p> -->
+
                             <div class="contact-checkbox">
                                 <input class="contact-checkbox__input" type="checkbox" id="checkbox">
                                 <label class="contact-checkbox__privaci" for="checkbox">I agree to the privacy
                                     policy</label>
                             </div>
                         </form>
-
 
                     </div>
                 </div>
@@ -275,20 +422,24 @@
                         </ul>
                     </div>
 
-                    <ul>
-                        <li>
-                            <a class="link" href="#advantages-section">Less talk</a>
-                        </li>
-                        <li>
-                            <a class="link" href="#service-section">Services category</a>
-                        </li>
-                        <li>
-                            <a class="link" href="#slider-section">Happy customer</a>
-                        </li>
-                        <li>
-                            <a class="link" href="#contact-section">Contact</a>
-                        </li>
-                    </ul>
+
+
+                    <div class="footer-section__link">
+                        <ul>
+                            <li>
+                                <a class="link" href="#advantages-section">Less talk</a>
+                            </li>
+                            <li>
+                                <a class="link" href="#service-section">Services category</a>
+                            </li>
+                            <li>
+                                <a class="link" href="#slider-section">Happy customer</a>
+                            </li>
+                            <li>
+                                <a class="link" href="#contact-section">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
 
                     <form class="footer-form">
 
@@ -316,13 +467,13 @@
                             </label>
                         </div>
 
-                        <!-- <a class="footer-form-privaci">I agree to the privacy policy</a> -->
+
                     </form>
 
                 </div>
 
                 <div class="footer-section__container-dog">
-                    <img src="./image/dog-footer-section.png" alt="little dog see you">
+                    <img class="footer-section__dog-size" src="./image/dog-footer-section.png" alt="little dog see you">
 
                 </div>
 
@@ -335,65 +486,54 @@
     <!-- BACKDROP -->
 
     <div class="backdrop is-hidden">
-        <div class="modal">
-            <div class="modal-container">
+        <div class="backdrop__modal">
+            <div class="backdrop__container">
 
-                <button class="modal-button-close modal-btn-close" type="button">
+                <button class="backdrop__button-close modal-btn-close" type="button">
                     <img src="./image/close-modal.svg" alt="close-modal">
                 </button>
 
-                <h2 class="modal-title">Our experts will take care of your friend</h2>
-                <p class="modal-privaci">Fill out the form so we can contact you!</p>
+                <h2 class="backdrop__title">Our experts will take care of your friend</h2>
+                <p>Fill out the form so we can contact you!</p>
 
-                <form class="modal-form" name="modal-form">
+                <form class="contact-form" name="modal-form">
 
 
-                    <div class="contact-form__input-container">
-                        <svg class="contact-form-svg">
+                    <div class="contact-form__container">
+                        <svg class="contact-form__svg">
                             <use href="./image/sprite.svg#you-name"></use>
                         </svg>
-                        <input class="contact-form-input" type="text" placeholder="user name">
+                        <input class="contact-form__input" type="text" placeholder="user name">
                     </div>
 
-                    <div class="contact-form__input-container">
+                    <div class="contact-form__container">
                         <label for="pet-name">
-                            <svg class="contact-form-svg">
+                            <svg class="contact-form__svg">
                                 <use href="./image/sprite.svg#pet-name"></use>
                             </svg>
                         </label>
-                        <input class="contact-form-input" type="text" id="pet-name" placeholder="pet name">
+                        <input class="contact-form__input" type="text" id="pet-name" placeholder="pet name">
                     </div>
 
-                    <div class="contact-form__input-container">
-                        <svg class="contact-form-svg">
+                    <div class="contact-form__container">
+                        <svg class="contact-form__svg">
                             <use href="./image/sprite.svg#phone"></use>
                         </svg>
-                        <input class="contact-form-input" type="tel" placeholder="Your phone">
+                        <input class="contact-form__input" type="tel" placeholder="Your phone">
                     </div>
 
-                    <div class="contact-form__input-container">
-                        <svg class="contact-form-svg">
+                    <div class="contact-form__container">
+                        <svg class="contact-form__svg">
                             <use href="./image/sprite.svg#email"></use>
                         </svg>
-                        <input class="contact-form-input" type="email" placeholder="Your email">
+                        <input class="contact-form__input" type="email" placeholder="Your email">
                     </div>
 
+                    <button class="backdrop__button" type="submit">Contact us</button>
 
-
-                    <!-- <input class="modal-input" type="text" placeholder="Your name">
-
-                    <input class="modal-input" type="text" placeholder="Pet name">
-
-                    <input class="modal-input" type="tel" placeholder="Your phone">
-
-                    <input class="modal-input" type="email" placeholder="Your email">
-
-                     -->
-                    <button class="modal-form-button" type="submit">Contact us</button>
-                    <!-- <a class="modal-form-privaci">I agree to the privacy policy</a> -->
-                    <div class="modal-form-checkbox">
-                        <input class="modal-form-checkbox-input" type="checkbox" id="checkbox">
-                        <label class="modal-form-checkbox-privaci" for="checkbox">I agree to the privacy
+                    <div class="backdrop__form-checkbox">
+                        <input class="backdrop__checkbox-input" type="checkbox" id="checkbox">
+                        <label class="backdrop__checkbox-privaci" for="checkbox">I agree to the privacy
                             policy</label>
                     </div>
                 </form>
@@ -401,8 +541,10 @@
             </div>
         </div>
     </div>
-
-
+    <script src="./js/sorting.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/burger-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

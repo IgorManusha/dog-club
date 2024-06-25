@@ -1,0 +1,119 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s, visibility 0.5s;
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    &__modal {
+        position: relative;
+        overflow: auto;
+        width: 100%;
+        max-width: 880px;
+        height: 100%;
+        max-height: 880px;
+        border-radius: 32px;
+        padding: 100px 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--secondary-color-white);
+    }
+
+    &__container {
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    &__button-close {
+        border: none;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__button {
+        width: 160px;
+        border: none;
+        border-radius: 8px;
+        padding: 16px 32px;
+        color: var(--primary-color-white);
+        background-color: var(--primary-color-orange);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.2;
+        font-family: 'Roboto';
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--secondary-color-orange);
+        }
+    }
+
+    &__form-checkbox {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__checkbox-input {
+        appearance: none;
+    }
+
+    &__checkbox-privaci {
+        padding-left: 24px;
+        text-align: center;
+        line-height: 1.2;
+        font-family: 'Roboto';
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    &__checkbox-privaci:hover {
+        text-decoration: underline;
+    }
+
+
+    &__checkbox-privaci::before {
+        margin: -1px 0px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border: 1px solid var(--primary-color-black);
+        content: " ";
+    }
+
+
+
+    &__checkbox-input:checked+.modal-form-checkbox-privaci::before {
+        background-image: url(../image/game-icons_check-mark.svg);
+        background-size: 14px 14px;
+        background-repeat: no-repeat;
+    }
+}
